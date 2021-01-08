@@ -1,3 +1,80 @@
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  padding: 50px;
+}
+
+.jumbotron {
+  padding: 20px;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+}
+
+.jumbotron h1 {
   color: dodgerblue;
+  font-size: 40px;
+}
+
+.jumbotron p {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.jumbotron a {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.jumbotron a:hover {
+  background-color: #0080ff;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+section div {
+  width: calc(100% / 3 - 20px);
+  padding: 20px;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+}
+
+section div h3 {
+  color: #ffa500;
+}
+
+section div a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+section div a:hover {
+  background-color: #cc8500;
+}
+
+section div p {
+  margin: 10px 0;
+  line-height: 1.3;
 }

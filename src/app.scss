@@ -1,5 +1,91 @@
-$baseColor: dodgerblue;
-
-h1 {
-    color: $baseColor;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
 }
+
+body {
+    padding: 50px;
+}
+
+// ---------------
+
+$baseColor: dodgerblue;
+$baseColorHover: #0080ff;
+
+$secondColor: #ffa500;
+$secondColorHover: #cc8500;
+
+$greyColor: #EEEEEE;
+
+.jumbotron {
+    padding: 20px;
+    background-color: $greyColor;
+    border-radius: 10px;
+}
+
+.jumbotron h1 {
+    color: $baseColor;
+    font-size: 40px;
+}
+
+.jumbotron p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.jumbotron a {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: $baseColor;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+}
+
+.jumbotron a:hover {
+    background-color: $baseColorHover;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+section div {
+    width: calc(100% / 3 - 20px);
+    padding: 20px;
+    background-color: $greyColor;
+    border-radius: 10px;
+}
+
+section div h3 {
+    color: $secondColor;
+}
+
+section div a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: $secondColor;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+}
+
+section div a:hover {
+    background-color: $secondColorHover;
+}
+
+section div p {
+    margin: 10px 0;
+    line-height: 1.3;
+}
+
